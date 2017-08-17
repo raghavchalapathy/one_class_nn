@@ -1,0 +1,72 @@
+1) Sklearn has module for one-class SVM : API
+
+sklearn.svm.OneClassSVM(kernel='rbf', degree=3, gamma='auto', coef0=0.0, tol=0.001, nu=0.5, shrinking=True, cache_size=200, verbose=False, max_iter=-1, random_state=None)
+
+2) Show the example of HTTP service request and USPS images.
+
+3) Now in the paper proposals are 
+	1) kernel Hilbert space (RKHS) is same as RBF ( my understanding is It correct ?)
+	2) Random Fourier machines :  
+
+4) How to configure a random Fourier machine kernel in sklearn. ?
+Answer: There is a kernel approximation module Skewed Chi Squared Kernel(SkewedChi2Sampler) is to be used to simulate Random fourier machines kernel but this currently is available for SGD( SVM) instead of One class SVM. Hence a custom kernel needs to be implemented to be used along with OneClass SVM am I correct ?
+
+5) What are the Neural network architecture similar to One class SVM ?
+
+Answer: 
+Paper1: Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery ( March 2017)
+URL:    https://arxiv.org/pdf/1703.05921.pdf
+Approach: 
+        Maybe you can train a GAN (Generative Adversarial Networks) and then use the Discriminator-network for the classification. It returns 1 if the input is real (=it is in the class) or 0 if the input is not in the class. The cool thing is that you only require class-data (and therefore no examples that are not in the class) to train the network. This network is then able to detect (non-) class members.
+Code :  
+          ==================================================
+Paper1 b:   Infogan  
+Code :         https://github.com/openai/InfoGAN
+                   https://github.com/awjuliani/TF-Tutorials/blob/master/InfoGAN-Tutorial.ipynb
+
+Url:            https://arxiv.org/pdf/1606.03657.pdf
+		==================================================
+Paper2: High-dimensional and large-scale anomaly detection using a linear one-class SVM with deep learning     
+
+URL:   http://ac.els-cdn.com/S0031320316300267/1-s2.0-S0031320316300267-main.pdf?_tid=0e7ee5c2-780a-11e7-ba75- 00000aacb362&acdnat=1501737205_050e56f7d886dcd04fb9ddbbc9885b41        
+
+Approach:  Architectures such as deep belief networks(DBNs) are a promising technique for learning robust features. We present a hybrid model where an unsupervised DBN is trained to extract generic underlying features, and a one-class-SVM is trained from the features learned by the DBN
+		==================================================
+
+Paper3: One-class document classification via Neural Networks
+
+URL : http://cs.haifa.ac.il/~manevitz/Publication/One-class%20document%20classification%20via%20Neural%20Networks.pdf
+
+Approach :Autoencoder like neural network architecture is used One-Class Classification (OCC): if the AE has been trained on a single 
+          class only, it’s possible to find a threshold for the reconstruction error such that elements with a reconstruction error greater than this threshold expose differences from the learned model. It can somehow be seen as an outlier detection procedure
+		==================================================
+
+Paper 4 : One class classification (ANN architectures : Autoencoders are used)
+URL: http://www.inf.u-szeged.hu/~busarobi/PDFs/BaBuKe09.pdf
+
+		==================================================
+
+Paper 5  : Deep Learning for One-Class Classification of Cognitive Tasks from fMRI data ( Autoencoder)
+           fMRI Analysis via One-class Machine Learning Techniques
+URL : http://www.ijcai.org/Proceedings/05/Papers/post-0172.pdf
+		==================================================
+
+Paper 6 : Survey paper of OCC: One class classifiers
+
+			http://individual.utoronto.ca/shehroz/files/occ_survey09.pdf
+
+
+
+6) What are the non-neural network approaches similar to or extending one-class SVM
+
+Paper1:  R1SVM: a Randomised Nonlinear Approach to Large-Scale Anomaly Detection
+URL   :     https://eprints.qut.edu.au/94229/7/94229.pdf
+
+
+Paper2 : Once class classifier using extreme machine learning 
+URL:     https://www.hindawi.com/journals/mpe/2015/412957/#B13
+Approach : 
+		One-class classification problem has been investigated thoroughly for past decades. Among one of the most effective neural network approaches for one-class classification, autoencoder has been successfully applied for many applications. However, this classifier relies on traditional learning algorithms such as backpropagation to train the network, which is quite time-consuming. To tackle the slow learning speed in autoencoder neural network, we propose a simple and efficient one-class classifier based on extreme learning machine (ELM).
+
+Paper 3: Online Learning with Regularized Kernel for One-Class Classification
+Approach : Similar to paper 2 ELM techniques are used.
