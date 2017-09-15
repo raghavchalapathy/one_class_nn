@@ -12,7 +12,7 @@ data_train, targets_train = train_data,train_target
 # Now predict the value of the digit on the second half:
 data_test, targets_test = test_data,test_target
 
-
+import tflearn
 from tflearn import DNN
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression,oneClassNN
@@ -39,17 +39,24 @@ No_of_hiddenNodes=n
 print "No_of_hiddenNodes",No_of_hiddenNodes
 
 input_layer = input_data(shape=[None, No_of_inputNodes]) #input layer of size 2
-hidden_layer = fully_connected(input_layer , No_of_hiddenNodes, activation='tanh') #hidden layer of size 2
-output_layer = fully_connected(hidden_layer, 1, activation='tanh') #output layer of size 1
+hidden_layer = fully_connected(input_layer , No_of_hiddenNodes, activation='tanh',name="hiddenLayer_Weights") #hidden layer of size 2
+output_layer = fully_connected(hidden_layer, 1, activation='tanh',name="outputLayer_Weights") #output layer of size 1
 
 # Hyper parameters for the one class Neural Network
 v = 0.4
-rho=0.3
+# rho=0.3
+
+# rho=input_data(shape=[None, 1])
+
+import tflearn.variables as va
+rho = va.variable(name='rho',shape=[])
+
 
 #use Stohastic Gradient Descent and Binary Crossentropy as loss function
-oneClassNN = oneClassNN(output_layer,v,rho,hidden_layer,output_layer,optimizer='sgd', loss='OneClassNN_Loss', learning_rate=5)
+oneClassNN = oneClassNN(output_layer,v,rho,hidden_layer,output_layer
+                        ,optimizer='sgd', loss='OneClassNN_Loss', learning_rate=5)
 
-model = DNN(oneClassNN)
+model = DNN(oneClassNN,tensorboard_verbose=3)
 
 #fit the model
 model.fit(X, Y, n_epoch=50, show_metric=True);
@@ -59,8 +66,12 @@ model.fit(X, Y, n_epoch=50, show_metric=True);
 print ('Expected:  ', [i for i in Y_test])
 print ('Predicted: ', [i for i in model.predict(X_test)])
 
-y_pred = model.predict(X_test) # Apply some ops
-acc_op = binary_accuracy_op(y_pred, Y_test)
+# y_pred = model.predict(X_test) # Apply some ops
+# acc_op = binary_accuracy_op(y_pred, Y_test)
+#
+vars = tflearn.variables.get_all_trainable_variable()
+for v in vars:
+    print v
 
 # Calculate accuracy by feeding data X and labels Y
-binary_accuracy = sess.run(acc_op, feed_dict={input_data: X, Y_test: Y})
+# binary_accuracy = sess.run(acc_op, feed_dict={input_data: X, Y_test: Y})

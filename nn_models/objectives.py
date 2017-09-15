@@ -22,6 +22,9 @@ def OneClassNN_Loss(y_pred, y_true, v, rho, hidden_layer, decode_layer):
 
     w = hidden_layer.W
     V = decode_layer.W
+    print("Shape of y_pred.......")
+    print(type(y_pred))
+    exit()
 
     # Compute L1 norm of the Weights of the input - hidden layer
     term1 = tflearn.losses.L2(w)
