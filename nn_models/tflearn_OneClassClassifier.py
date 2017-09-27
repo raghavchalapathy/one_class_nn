@@ -40,7 +40,7 @@ print "No_of_hiddenNodes",No_of_hiddenNodes
 
 input_layer = input_data(shape=[None, No_of_inputNodes]) #input layer of size 2
 hidden_layer = fully_connected(input_layer , No_of_hiddenNodes, activation='tanh',name="hiddenLayer_Weights") #hidden layer of size 2
-output_layer = fully_connected(hidden_layer, 1, activation='tanh',name="outputLayer_Weights") #output layer of size 1
+output_layer = fully_connected(hidden_layer, 1, activation='sigmoid',name="outputLayer_Weights") #output layer of size 1
 
 # Hyper parameters for the one class Neural Network
 v = 0.4
