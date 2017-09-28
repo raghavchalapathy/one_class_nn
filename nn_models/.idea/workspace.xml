@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfab84ca-440d-4a53-ad0e-254248b57a79" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/usps_OneClassSVM(Linear_Kernel_FourierFeatures)_Vs_OneClassNN-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/usps_OneClassSVM(Linear_Kernel_FourierFeatures)_Vs_OneClassNN-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tflearn_OneClassClassifier.py" afterPath="$PROJECT_DIR$/tflearn_OneClassClassifier.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../usps_OneClassSVM(Linear_Kernel_FourierFeatures)_Vs_OneClassNN.ipynb" afterPath="$PROJECT_DIR$/../usps_OneClassSVM(Linear_Kernel_FourierFeatures)_Vs_OneClassNN.ipynb" />
-    </list>
+    <list default="true" id="bfab84ca-440d-4a53-ad0e-254248b57a79" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,14 +94,14 @@
       <file leaf-file-name="objectives.py" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tflearn/objectives.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="538">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
-                <element signature="e#3855#4833#0" expanded="false" />
-                <element signature="e#4872#5134#0" expanded="false" />
-                <element signature="e#5212#5828#0" expanded="false" />
-                <element signature="e#5212#5378#1" expanded="false" />
+                <element signature="e#3800#4778#0" expanded="false" />
+                <element signature="e#4817#5079#0" expanded="false" />
+                <element signature="e#5157#5773#0" expanded="false" />
+                <element signature="e#5157#5323#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -168,7 +164,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
+    <option name="x" value="10" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -302,10 +298,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="10" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43933055" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -416,10 +412,10 @@
           <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,10 +493,10 @@
           <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -565,10 +561,10 @@
           <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="53" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,10 +632,10 @@
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,10 +674,10 @@
           <caret line="23" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,14 +801,14 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tflearn/objectives.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
+        <state relative-caret-position="538">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#3855#4833#0" expanded="false" />
-            <element signature="e#4872#5134#0" expanded="false" />
-            <element signature="e#5212#5828#0" expanded="false" />
-            <element signature="e#5212#5378#1" expanded="false" />
+            <element signature="e#3800#4778#0" expanded="false" />
+            <element signature="e#4817#5079#0" expanded="false" />
+            <element signature="e#5157#5773#0" expanded="false" />
+            <element signature="e#5157#5323#1" expanded="false" />
           </folding>
         </state>
       </provider>
