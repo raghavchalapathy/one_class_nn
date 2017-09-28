@@ -18,6 +18,8 @@ from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression,oneClassNN
 from tflearn.metrics import binary_accuracy_op
 
+import tflearn.variables
+
 
 #Training examples
 X = data_train
@@ -37,6 +39,8 @@ m,n = data_train.shape
 No_of_inputNodes = n
 No_of_hiddenNodes=n
 print "No_of_hiddenNodes",No_of_hiddenNodes
+
+
 
 input_layer = input_data(shape=[None, No_of_inputNodes]) #input layer of size 2
 hidden_layer = fully_connected(input_layer , No_of_hiddenNodes, activation='tanh',name="hiddenLayer_Weights") #hidden layer of size 2
