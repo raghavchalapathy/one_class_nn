@@ -49,21 +49,28 @@ input_layer = input_data(shape=[None, No_of_inputNodes])  # input layer of size
 np.random.seed(42)
 theta0 = np.random.normal(0, 1, K + K*D + 1) *0.0001
 #theta0 = np.random.normal(0, 1, K + K*D + 1) # For linear
-hidden_layer = fully_connected(input_layer, 4, bias=False, activation='sigmoid', name="hiddenLayer_Weights",
+# hidden_layer = fully_connected(input_layer, 4, bias=False, activation='sigmoid', name="hiddenLayer_Weights",
+#                                weights_init="normal")  # hidden layer of size 2
+#
+#
+# output_layer = fully_connected(hidden_layer, 1, bias=False,  activation='linear', name="outputLayer_Weights",
+#                                weights_init="normal")  # output layer of size 1
+#
+
+
+hidden_layer = fully_connected(input_layer, 4,  activation='sigmoid', name="hiddenLayer_Weights",
                                weights_init="normal")  # hidden layer of size 2
 
 
-output_layer = fully_connected(hidden_layer, 1, bias=False, activation='linear', name="outputLayer_Weights",
+output_layer = fully_connected(hidden_layer, 1,  activation='linear', name="outputLayer_Weights",
                                weights_init="normal")  # output layer of size 1
-
-
 
 # Hyper parameters for the one class Neural Network
 v = 0.04
 nu = 0.04
 
 # Initialize rho
-value = 0.01
+value = 0.0001
 init = tf.constant_initializer(value)
 rho = va.variable(name='rho', dtype=tf.float32, shape=[], initializer=init)
 
@@ -86,7 +93,7 @@ nu = 0.04
 
 # temp = np.random.normal(0, 1, K + K*D + 1)[-1]
 
-temp = theta0[-1]
+temp = theta0[-1] *1000000
 
 # temp = tflearn.variables.get_value(rho, session=sess)
 
@@ -151,8 +158,9 @@ test = nnScore(X_test, wStar, VStar, g)
 arrayTrain = train.eval(session=sess)
 arrayTest = test.eval(session=sess)
 
-# print "Train Array:",arrayTrain
-# print "Test Array:",arrayTest
+print "Train Array:",arrayTrain
+print "Test Array:",arrayTest
+print "Rho Final:",temp
 
 plt.hist(arrayTrain-temp,  bins = 25,label='Normal');
 plt.hist(arrayTest-temp, bins = 25, label='Anomalies');
